@@ -1,10 +1,9 @@
 {
   "name": "uniq-line",
   "main": "./lib/uniq-line",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The package to merge the continuous same lines into one line.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "uniq-line:uniq"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
