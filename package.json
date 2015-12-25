@@ -2,13 +2,13 @@
   "name": "uniq-line",
   "main": "./lib/uniq-line",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "The package to merge the continuous same lines into one line.",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "uniq-line:uniq"
   },
-  "repository": "https://github.com/atom/uniq-line",
+  "repository": "https://github.com/takahitonara/uniq-line",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
