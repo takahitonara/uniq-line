@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'uniq uniq-line'
+      'command': 'uniq-line:uniq'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'uniq-line'
+      'submenu': [
+        {
+          'label': 'uniq'
+          'command': 'uniq-line:uniq'
+        }
+      ]
+    ]
+  }
+]
