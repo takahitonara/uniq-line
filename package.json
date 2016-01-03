@@ -5,7 +5,7 @@
   "description": "The package to merge the continuous same lines into one line.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "uniq-line:uniq"
+    "atom-text-editor": "uniq-line:uniq"
   },
   "repository": "https://github.com/takahitonara/uniq-line",
   "license": "MIT",
