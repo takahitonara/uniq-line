@@ -32,3 +32,22 @@ describe "unique line", ->
           bbb
           ccc
         """
+
+  describe "when entire lines are selected", ->
+    it "marges the selected lines to unique lines, not sort", ->
+      editor.setText """
+        aaa
+        bbb
+        bbb
+        ccc
+        aaa
+      """
+      editor.setSelectedBufferRange([[1,0], [4,0]])
+
+      uniqueLines ->
+        expect(editor.getText()).toBe """
+          aaa
+          bbb
+          ccc
+          aaa
+        """
