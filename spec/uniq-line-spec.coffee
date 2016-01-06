@@ -51,3 +51,21 @@ describe "unique line", ->
           ccc
           aaa
         """
+
+  describe "when entire lines are selected", ->
+    it "doesn't marges the selected lines if continue lines don't exist", ->
+      editor.setText """
+        aaa
+        bbb
+        ccc∏
+        bbb
+      """
+      editor.setSelectedBufferRange([[1,0], [4,0]])
+
+      uniqueLines ->
+        expect(editor.getText()).toBe """
+          aaa
+          bbb
+          ccc
+          bbb
+        """
