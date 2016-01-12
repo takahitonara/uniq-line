@@ -57,7 +57,7 @@ describe "unique line", ->
       editor.setText """
         aaa
         bbb
-        ccc∏
+        ccc
         bbb
       """
       editor.setSelectedBufferRange([[1,0], [4,0]])
